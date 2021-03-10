@@ -1,0 +1,13 @@
+<section class="wrapper">
+    <div class="fixed-header" [ngClass]="{'scrl-header': scrlBD}">
+        <app-ayur-header></app-ayur-header>
+    </div>
+    <div class="wrapper-body">
+        <router-outlet></router-outlet>
+        <app-ayur-footer></app-ayur-footer>
+        <app-ayur-copyright></app-ayur-copyright>
+        <div class="chat-bot-pos">
+            <app-ayur-chatbot></app-ayur-chatbot>
+        </div>
+    </div>
+</section>

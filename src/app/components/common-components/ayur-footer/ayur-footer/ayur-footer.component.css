@@ -1,0 +1,56 @@
+.footer-main {
+    background-color: rgb(240, 240, 240);
+    padding: 110px 50px;
+    color: #7f7f7f;
+}
+
+.footer-main .title span {
+    white-space: nowrap;
+    font: normal normal normal 40px/1.4em didot-w01-italic, serif;
+    color: #3a54b4;
+    cursor: pointer;
+}
+
+.footer-main .title:hover span {
+    color: inherit !important;
+}
+
+.footer-main ul li:first-child {
+    margin-top: 12px;
+}
+
+.footer-main ul li p {
+    line-height: 3em;
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.footer-contact {
+    text-align: right;
+}
+
+.footer-contact h4 {
+    margin: 10px 0px 0px 0px;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    color: #000;
+    line-height: 48px;
+}
+
+.footer-contact .contact_form_btn {
+    display: inline-block;
+    width: 180px;
+    border-color: #3a54b4 !important;
+    color: #3a54b4;
+    padding: 0.25rem;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.footer-contact .contact_form_btn:hover {
+    background-color: #3a54b4 !important;
+    color: #fff;
+}

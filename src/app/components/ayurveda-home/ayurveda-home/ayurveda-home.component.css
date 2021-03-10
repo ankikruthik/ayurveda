@@ -1,0 +1,25 @@
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1024;
+}
+
+.scrl-header {
+    background-color: rgb(251 251 251);
+    box-shadow: 0 0 5px rgb(0 0 0 / 50%);
+    transition: all .3s ease;
+}
+
+.wrapper-body {
+    position: relative;
+    background-color: #f5f5f5;
+    padding-top: 134px !important;
+}
+
+.chat-bot-pos {
+    z-index: 1024;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}

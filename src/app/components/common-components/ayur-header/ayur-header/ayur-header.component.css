@@ -1,0 +1,86 @@
+.ayur-header {
+    background-color: transparent;
+    margin: 0px 50px;
+}
+
+.top-nav {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav li {
+    display: inline-block;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.top-nav li:last-child {
+    margin-right: 0px;
+}
+
+.top-nav li svg,
+.top-nav li img {
+    width: 23px;
+    height: 23px;
+}
+
+.a-title {
+    margin-top: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-title-a {
+    height: 70px;
+    display: block;
+    cursor: pointer;
+}
+
+.a-title-a span {
+    font-weight: bold;
+    line-height: 56px;
+    font: normal normal 700 40px/1.4em 'eb garamond', serif;
+    color: #000;
+}
+
+.a-title:hover span {
+    color: rgb(61, 155, 233, var(--color_15))
+}
+
+.web_route_ul li {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
+    height: 40px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    visibility: inherit;
+}
+
+.web_route_ul li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.web_route_ul li a .p-div {
+    padding: 0 5px;
+}
+
+.web_route_ul li a p {
+    text-align: center;
+    line-height: 40px;
+    display: inline-block;
+    padding: 0 10px;
+    color: #303030;
+}
+
+.web_route_ul li a.active p {
+    color: #3a54b4 !important;
+}
