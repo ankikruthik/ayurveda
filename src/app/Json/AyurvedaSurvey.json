@@ -21,7 +21,7 @@
             "QuestionId": 3,
             "QuestionPath": "MeetYou",
             "QuestionType": "Html",
-            "QuestionName": "Nice to meet you ({{userName}})!",
+            "QuestionName": "Nice to meet you ({{userName}})! <br/> <span>&#9786;</span>",
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
             "NextQuestion": "Emoji"
@@ -37,16 +37,16 @@
             "NextQuestion": "TakenBefore",
             "Options": [{
                     "OptionID": 1,
-                    "OptionValue": "<div> <h2>Curious</h2/> </div>"
+                    "OptionValue": "<div> <h2>Curious</h2/> <br/> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"140\" viewBox=\"0 0 140 140\" fill=\"none\"><path d=\"M69.5 107C90.2107 107 107 90.2107 107 69.5C107 48.7893 90.2107 32 69.5 32C48.7893 32 32 48.7893 32 69.5C32 90.2107 48.7893 107 69.5 107Z\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M57.2006 67.7C61.467 67.7 64.9256 64.2414 64.9256 59.975C64.9256 55.7086 61.467 52.25 57.2006 52.25C52.9342 52.25 49.4756 55.7086 49.4756 59.975C49.4756 64.2414 52.9342 67.7 57.2006 67.7Z\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M81.8744 67.7C86.1408 67.7 89.5994 64.2414 89.5994 59.975C89.5994 55.7086 86.1408 52.25 81.8744 52.25C77.608 52.25 74.1494 55.7086 74.1494 59.975C74.1494 64.2414 77.608 67.7 81.8744 67.7Z\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M64.625 57.95C64.625 55.25 66.8 53 69.575 53C72.275 53 74.525 55.175 74.525 57.95\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M88.8496 55.1748H94.9246\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"/><path d=\"M44.0752 55.1748H50.1502\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\" stroke-linecap=\"round\"/></svg>  <div> We will try and addres all your questions! </div> </div > "
                 },
                 {
                     "OptionID": 2,
-                    "OptionValue": "<div> <h2>Aware</h2/> </div>"
+                    "OptionValue": "<div> <h2>Aware</h2/> <br/> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"140\" viewBox=\"0 0 140 140\" fill=\"none\"><path d=\"M69.5 107C90.2107 107 107 90.2107 107 69.5C107 48.7893 90.2107 32 69.5 32C48.7893 32 32 48.7893 32 69.5C32 90.2107 48.7893 107 69.5 107Z\" fill=\"white\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M58.4004 65.2246C60.6786 65.2246 62.5254 63.3778 62.5254 61.0996C62.5254 58.8214 60.6786 56.9746 58.4004 56.9746C56.1222 56.9746 54.2754 58.8214 54.2754 61.0996C54.2754 63.3778 56.1222 65.2246 58.4004 65.2246Z\" fill=\"#282C2F\"/><path d=\"M81.2754 65.2246C83.5536 65.2246 85.4004 63.3778 85.4004 61.0996C85.4004 58.8214 83.5536 56.9746 81.2754 56.9746C78.9972 56.9746 77.1504 58.8214 77.1504 61.0996C77.1504 63.3778 78.9972 65.2246 81.2754 65.2246Z\" fill=\"#282C2F\"/><path d=\"M50.0742 49.3251C50.0742 49.3251 57.3492 41.2251 65.0742 48.9501\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M73.3242 49.3251C73.3242 49.3251 80.5992 41.2251 88.3242 48.9501\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/></svg> <div>Let’s see if we can add something new to that                </div>     </div>"
 
                 },
                 {
                     "OptionID": 3,
-                    "OptionValue": "<div> <h2>Skeptical</h2/> </div>"
+                    "OptionValue": "<div> <h2>Skeptical</h2/> <br/> <svg xmlns=\"http://www.w3.org/2000/svg\" width=\"140\" height=\"140\" viewBox=\"0 0 140 140\" fill=\"none\"><path d=\"M69.5 107C90.2107 107 107 90.2107 107 69.5C107 48.7893 90.2107 32 69.5 32C48.7893 32 32 48.7893 32 69.5C32 90.2107 48.7893 107 69.5 107Z\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M46.7754 62.9746H65.3754\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/><path d=\"M73.5508 62.2245C73.5508 62.2245 81.5758 62.7495 82.5508 57.1995C82.5508 57.1995 85.0258 50.2245 94.5508 56.2245\" stroke=\"#282C2F\" stroke-width=\"2\" stroke-miterlimit=\"10\"/></svg> <div>Hmmmm, how about we change that?</div> </div>"
 
                 }
             ]
@@ -78,14 +78,17 @@
             "QuestionType": "TextBox",
             "QuestionName": "How old are you?",
             "IsReqyuired": false,
+            "NextQuestion": "Gender",
             "BackgroundImageUrl": ""
         },
         {
             "QuestionId": 7,
             "QuestionType": "Button",
+            "QuestionPath": "Gender",
             "QuestionName": "How do you identify?",
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
+            "NextQuestion": "Areas",
             "Options": [{
                     "OptionID": 1,
                     "OptionValue": "Female"
@@ -99,6 +102,42 @@
                 {
                     "OptionID": 3,
                     "OptionValue": "Other"
+
+                }
+            ]
+
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Button",
+            "QuestionPath": "Areas",
+            "QuestionName": "How do you identify?",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "Areas",
+            "Options": [{
+                    "OptionID": 1,
+                    "OptionValue": "Immunity"
+
+                },
+                {
+                    "OptionID": 2,
+                    "OptionValue": "Skin and Hair"
+
+                },
+                {
+                    "OptionID": 3,
+                    "OptionValue": "Stress"
+
+                },
+                {
+                    "OptionID": 3,
+                    "OptionValue": "Women’s Health"
+
+                },
+                {
+                    "OptionID": 3,
+                    "OptionValue": "Fitness"
 
                 }
             ]

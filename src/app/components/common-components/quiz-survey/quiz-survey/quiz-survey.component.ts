@@ -32,11 +32,13 @@ export class QuizSurveyComponent implements OnInit {
         this.getQuestions();
         this.getNextQuestion(this.nextQuestion);
         this.userName = this.sessionHelper.get("userName");
-        if(this.question.QuestionType=="Html"){
+       this._changeDetector.markForCheck();
           setTimeout(() => {
+            if(this.question.QuestionType=="Html"){
             this.router.navigate(["/ayurveda/quiz-survey", this.question.NextQuestion]);
+          }
         }, 5000);  //5s
-        }
+        
       }
     });
     this.surveyForm = this.formBuilder.group({
@@ -52,12 +54,17 @@ export class QuizSurveyComponent implements OnInit {
     if (this.question.QuestionPath == "MeetYou")
       this.question.QuestionName = this.question.QuestionName.replace("{{userName}}", this.userName);
   }
-  Next() {
+  Next(id) {
     switch (this.question.QuestionPath) {
       case "Name":
+        this.userName=this.surveyForm.value.questionControl;
+        this.sessionHelper.removeItem("userName");
         this.sessionHelper.set("userName", this.surveyForm.value.questionControl)
+        this._changeDetector.markForCheck();
         break;
-
+        case "Emoji":
+          this.sessionHelper.set("Emoji", id)
+          break;
       default:
         break;
     }
