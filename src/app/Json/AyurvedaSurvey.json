@@ -1,0 +1,108 @@
+{
+    "Question": [{
+            "QuestionId": 1,
+            "QuestionPath": "Welcome",
+            "QuestionType": "Html",
+            "QuestionName": "Hi! Welcome to The Science of Ayurveda",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "Name"
+        },
+        {
+            "QuestionId": 2,
+            "QuestionPath": "Name",
+            "QuestionType": "TextBox",
+            "QuestionName": "What is your name?",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "MeetYou"
+        },
+        {
+            "QuestionId": 3,
+            "QuestionPath": "MeetYou",
+            "QuestionType": "Html",
+            "QuestionName": "Nice to meet you ({{userName}})!",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "Emoji"
+
+        },
+        {
+            "QuestionId": 4,
+            "QuestionType": "Emoji",
+            "QuestionPath": "Emoji",
+            "QuestionName": "When it comes to Ayurveda you feel...",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "TakenBefore",
+            "Options": [{
+                    "OptionID": 1,
+                    "OptionValue": "<div> <h2>Curious</h2/> </div>"
+                },
+                {
+                    "OptionID": 2,
+                    "OptionValue": "<div> <h2>Aware</h2/> </div>"
+
+                },
+                {
+                    "OptionID": 3,
+                    "OptionValue": "<div> <h2>Skeptical</h2/> </div>"
+
+                }
+            ]
+        },
+        {
+            "QuestionId": 5,
+            "QuestionPath": "TakenBefore",
+            "QuestionType": "Button",
+            "QuestionName": "Have you taken Ayurvedic medicine before?",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "Age",
+            "Options": [{
+                    "OptionID": 1,
+                    "OptionValue": "Yes"
+
+                },
+                {
+                    "OptionID": 2,
+                    "OptionValue": "No"
+
+                }
+            ]
+
+        },
+        {
+            "QuestionId": 6,
+            "QuestionPath": "Age",
+            "QuestionType": "TextBox",
+            "QuestionName": "How old are you?",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": ""
+        },
+        {
+            "QuestionId": 7,
+            "QuestionType": "Button",
+            "QuestionName": "How do you identify?",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "Options": [{
+                    "OptionID": 1,
+                    "OptionValue": "Female"
+
+                },
+                {
+                    "OptionID": 2,
+                    "OptionValue": "Male"
+
+                },
+                {
+                    "OptionID": 3,
+                    "OptionValue": "Other"
+
+                }
+            ]
+
+        }
+    ]
+}

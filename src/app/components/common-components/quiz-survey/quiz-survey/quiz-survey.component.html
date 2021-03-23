@@ -1,0 +1,24 @@
+<section class="amain-wrapper w-100">
+    <div class="section-1 position-relative">
+
+        <div class="mid-div">
+            <form [formGroup]="surveyForm">
+
+
+                <span>{{question.QuestionName}}</span> <br />
+                <br />
+                <span *ngIf="question.QuestionType=='TextBox'"> <input type="text" formControlName="questionControl"
+                        class="form-control" /> </span>
+                <span *ngIf="question.QuestionType=='Emoji'">
+                    <span *ngFor="let a of question.Options; let index = index">
+                        <button [innerHTML]="a.OptionValue"> </button> <br />
+
+                    </span>
+                </span>
+                <span *ngIf="question.QuestionType=='TextBox'">
+                    <button mat-stroked-button (click)="Next()">Next</button>
+                </span>
+            </form>
+        </div>
+    </div>
+</section>

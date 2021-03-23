@@ -1,0 +1,33 @@
+.section-1 .mid-div span {
+    letter-spacing: 0.2rem;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.section-1 .mid-div button {
+    display: inline-block;
+    width: 180px;
+    border-color: #000 !important;
+    color: #fff;
+    padding: 0.5rem .25rem;
+    font-size: 18px;
+    margin-top: 50px;
+    background-color: #000;
+    border-radius: 0px;
+}
+
+.amain-wrapper {
+    float: left;
+    height: 100%;
+}
+
+.section-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mid-div {
+    text-align: center;
+}
