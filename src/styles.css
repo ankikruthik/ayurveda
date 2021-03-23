@@ -6,6 +6,12 @@ body {
     font: 15px/24px "Poppins", "sans-serif";
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
 a,
 a:hover,
 a:focus,
@@ -21,4 +27,19 @@ ul {
 
 ul li {
     list-style-type: none;
+}
+
+.form-control {
+    padding: 25px 25px 25px 5px;
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.input100 {
+    display: block;
+    width: 100%;
+    background: 0 0;
+    padding: 10px 0px 12px;
+    font-size: 14px;
+    color: #9b9b9b;
 }

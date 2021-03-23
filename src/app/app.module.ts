@@ -5,6 +5,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SessionHelper } from './core/session.helper';
 import { AdminMaterialModule } from './_helpers/_helpers/material/admin-material/admin-material.module';
 
 @NgModule({
@@ -15,12 +16,9 @@ import { AdminMaterialModule } from './_helpers/_helpers/material/admin-material
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,
-    ReactiveFormsModule,
-
     AdminMaterialModule
   ],
-  providers: [],
+  providers: [SessionHelper],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

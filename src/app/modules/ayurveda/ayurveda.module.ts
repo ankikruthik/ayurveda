@@ -13,14 +13,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminMaterialModule } from 'src/app/_helpers/_helpers/material/admin-material/admin-material.module';
 import { AyurChatbotComponent } from '../../components/common-components/ayur-chatbot/ayur-chatbot/ayur-chatbot.component';
 import { AyurMainPageComponent } from '../../components/ayur-main-page/ayur-main-page.component';
+import { QuizSurveyComponent } from '../../components/common-components/quiz-survey/quiz-survey/quiz-survey.component';
 
 
 @NgModule({
-  declarations: [AyurvedaHomeComponent, AyurHeaderComponent, TheScienceOfAyurvedaComponent, OurStoryComponent, BlogComponent, AyurCopyrightComponent, AyurFooterComponent, AyurChatbotComponent, AyurMainPageComponent],
+  declarations: [AyurvedaHomeComponent, AyurHeaderComponent, TheScienceOfAyurvedaComponent, OurStoryComponent, BlogComponent, AyurCopyrightComponent, AyurFooterComponent, AyurChatbotComponent, AyurMainPageComponent, QuizSurveyComponent],
   imports: [
     CommonModule,
     AyurvedaRoutingModule,
-
     FormsModule,
     ReactiveFormsModule,
     AdminMaterialModule
