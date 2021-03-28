@@ -47,7 +47,7 @@ ul li {
 .quiz-container {
     width: 900px;
     margin: 0 auto;
-    padding-top: 120px;
+    padding-top: 50px;
 }
 
 .question-title {
@@ -112,4 +112,20 @@ ul li {
 .responseIcon {
     font-size: 100px;
     text-align: center;
+}
+
+.title-Position {
+    padding-top: 50px;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-black:hover {
+    color: blue;
+}
+
+.btn-pad {
+    padding-top: 35px;
 }

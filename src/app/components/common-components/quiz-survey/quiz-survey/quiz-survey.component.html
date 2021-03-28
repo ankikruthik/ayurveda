@@ -6,9 +6,9 @@
 
     <div class="">
         <div class="col-lg-12">
-            <div class="question-title text-center">
+            <div class="title-Position question-title text-center">
                 <a class="a-title-a" href="/ayurveda">
-                    <span>Ayurveda</span>
+                    <div class="text-black">Ayurveda</div>
                 </a>
             </div>
             <div class="quiz-container">
@@ -24,7 +24,7 @@
                                 <div class="col-sm-12" *ngIf="question.QuestionType=='TextBox'">
                                     <div class="inputContainer">
                                         <input type="text" formControlName="questionControl" class="form-control inputText" />
-                                        <span class="inputSpan" *ngIf="question.QuestionType=='TextBox'">
+                                        <span class="inputSpan btn-pad" *ngIf="question.QuestionType=='TextBox'">
                                     <button class="nextbtn" (click)="Next(0)"></button>
                                 </span>
                                     </div>
