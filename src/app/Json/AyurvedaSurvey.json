@@ -126,27 +126,32 @@
             "NextQuestion": "Immunity",
             "Options": [{
                     "OptionID": 1,
-                    "OptionValue": "Immunity"
-
+                    "OptionValue": "Immunity",
+                    "NextQuestion": "Immunity"
                 },
                 {
                     "OptionID": 2,
-                    "OptionValue": "Skin and Hair"
+                    "OptionValue": "Skin and Hair",
+                    "NextQuestion": "SkinHair"
 
                 },
                 {
                     "OptionID": 3,
-                    "OptionValue": "Stress"
+                    "OptionValue": "Stress",
+                    "NextQuestion": "Stress"
 
                 },
                 {
                     "OptionID": 3,
-                    "OptionValue": "Women’s Health"
+                    "OptionValue": "Women’s Health",
+                    "NextQuestion": "WomenHealth"
+
 
                 },
                 {
                     "OptionID": 3,
-                    "OptionValue": "Fitness"
+                    "OptionValue": "Fitness",
+                    "NextQuestion": "Fitness"
 
                 }
             ]
@@ -161,6 +166,7 @@
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
             "NextQuestion": "AboutImmunity",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
             "Options": []
         },
         {
@@ -173,6 +179,7 @@
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
             "NextQuestion": "Immunityinterest",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
             "Options": []
 
         },
@@ -321,6 +328,7 @@
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
             "NextQuestion": "AboutStress",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
             "Options": []
 
         },
@@ -333,7 +341,92 @@
             "QuestionDesc": "In Ayurveda, stress is an imbalance of the vata (air) and Pitta (fire) forces within the body.This imbalance results in breathlessness and sweating; air and fire. Ayurvedic stress remedies are able to quickly correct this and restore balance in the body",
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
-            "NextQuestion": "Stress",
+            "NextQuestion": "End",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "Options": []
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "SkinHair",
+            "QuestionCategory": "SkinHair",
+            "QuestionName": "Skin and Hair",
+            "QuestionDesc": "",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "AboutSkinHair",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "Options": []
+
+
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "AboutSkinHair",
+            "QuestionCategory": "SkinHair",
+            "QuestionName": "Skin and Hair",
+            "QuestionDesc": "Ayurvedic skin and hair remedies are made using ancient remedies. These products are  derived from natural and organic ingredients to optimise your natural beauty.",
+            "IsReqyuired": false,
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "NextQuestion": "End",
+            "BackgroundImageUrl": "",
+            "Options": []
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "Fitness",
+            "QuestionCategory": "Fitness",
+            "QuestionName": "Fitness",
+            "QuestionDesc": "",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "AboutFitness",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "Options": []
+
+
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "AboutFitness",
+            "QuestionCategory": "Fitness",
+            "QuestionName": "Fitness",
+            "QuestionDesc": "Ayurvedic skin and hair remedies are made using ancient remedies. These products are  derived from natural and organic ingredients to optimise your natural beauty.",
+            "IsReqyuired": false,
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "NextQuestion": "End",
+            "BackgroundImageUrl": "",
+            "Options": []
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "WomenHealth",
+            "QuestionCategory": "WomenHealth",
+            "QuestionName": "WomenHealth",
+            "QuestionDesc": "",
+            "IsReqyuired": false,
+            "BackgroundImageUrl": "",
+            "NextQuestion": "AboutWomenHealth",
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "Options": []
+
+
+        },
+        {
+            "QuestionId": 8,
+            "QuestionType": "Html",
+            "QuestionPath": "AboutWomenHealth",
+            "QuestionCategory": "WomenHealth",
+            "QuestionName": "WomenHealth",
+            "QuestionDesc": "Ayurvedic skin and hair remedies are made using ancient remedies. These products are  derived from natural and organic ingredients to optimise your natural beauty.",
+            "IsReqyuired": false,
+            "QuestionImage": "<img src='https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png' alt='' />",
+            "NextQuestion": "End",
+            "BackgroundImageUrl": "",
             "Options": []
         }
     ]

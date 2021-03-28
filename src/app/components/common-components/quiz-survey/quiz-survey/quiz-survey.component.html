@@ -3,8 +3,14 @@
 </div>
 
 <div class="container">
+
     <div class="">
         <div class="col-lg-12">
+            <div class="question-title text-center">
+                <a class="a-title-a" href="/ayurveda">
+                    <span>Ayurveda</span>
+                </a>
+            </div>
             <div class="quiz-container">
                 <form [formGroup]="surveyForm">
                     <div *ngIf="question.QuestionCategory == 'General'">
@@ -32,7 +38,7 @@
                                 <div class="col-sm-4" *ngFor="let a of question.Options; let index = index">
 
                                     <div>
-                                        <button class="btn btn-secondary" [innerHTML]="a.OptionValue" (click)="Next(a.OptionId)">
+                                        <button class="btn btn-secondary" [innerHTML]="a.OptionValue" (click)="Next(a.NextQuestion)">
                                         </button>
                                     </div>
 
@@ -47,12 +53,22 @@
                         <div>
                             <div class="page10">
                                 <div class="text-center">
-                                    <h1 class="question-title">Immunity</h1>
+                                    <h1 class="question-title" [innerHTML]="question.QuestionName"></h1>
                                     <div class="question-responses">
-                                        <img src="https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png" alt="" />
-                                        <p>
-                                            Ayurvedic immunity is the belief of strengthening the body’s defenses against diseases. Ayurveda believes in preventing diseases before having to treat them.
+                                        <div [innerHTML]="question.QuestionImage"></div>
+                                        <p [innerHTML]="question.QuestionDesc">
+
                                         </p>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-4" *ngFor="let a of question.Options; let index = index">
+
+                                            <div>
+                                                <button class="btn btn-secondary" [innerHTML]="a.OptionValue" (click)="Next(a.NextQuestion)">
+                                                </button>
+                                            </div>
+
+                                        </div>
                                     </div>
                                 </div>
                             </div>

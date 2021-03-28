@@ -85,11 +85,26 @@ export class QuizSurveyComponent implements OnInit {
       default:
         break;
     }
+    if(this.question.QuestionPath=="Areas")
+    {
+      this.router.navigate(["/ayurveda/quiz-survey-redirect", id]);
+    }
+    else{
     this.router.navigate(["/ayurveda/quiz-survey-redirect", this.question.NextQuestion]);
+    }
   }
   Back() {
+    if(this.question.QuestionPath=="Immunity" || this.question.QuestionPath=="SkinHair" || this.question.QuestionPath=="Stress"
+    || this.question.QuestionPath=="WomenHealth" || this.question.QuestionPath=="Fitness")
+    {
+      
+      this.router.navigate(["/ayurveda/quiz-survey-redirect","Areas"]);
+    } else
+    {
+      
     var previousQuestion = _.filter(this.surveyQuestions.Question, q => q.NextQuestion == this.question.QuestionPath)[0];
     this.router.navigate(["/ayurveda/quiz-survey-redirect", previousQuestion.QuestionPath]);
+    }
   }
   ngOnDestroy() {
     clearTimeout(5000);
