@@ -6,6 +6,7 @@ import { AyurMainPageComponent } from 'src/app/components/ayur-main-page/ayur-ma
 import { OurStoryComponent } from 'src/app/components/our-story/our-story/our-story.component';
 import { TheScienceOfAyurvedaComponent } from 'src/app/components/the-science-of-ayurveda/the-science-of-ayurveda/the-science-of-ayurveda.component';
 import { QuizSurveyComponent } from 'src/app/components/common-components/quiz-survey/quiz-survey/quiz-survey.component';
+import { QuizSurveyRedirectComponent } from 'src/app/components/common-components/quiz-survey-redirect/quiz-survey-redirect.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,8 @@ const routes: Routes = [
     ]
   },
   { path: 'quiz-survey/:question', component: QuizSurveyComponent }
+  ,
+  { path: 'quiz-survey-redirect/:question', component: QuizSurveyRedirectComponent }
 ];
 
 @NgModule({

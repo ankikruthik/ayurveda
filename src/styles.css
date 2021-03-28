@@ -43,3 +43,73 @@ ul li {
     font-size: 14px;
     color: #9b9b9b;
 }
+
+.quiz-container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 120px;
+}
+
+.question-title {
+    font-size: 46px;
+}
+
+.question-responses {
+    padding-top: 50px;
+}
+
+.textbox-xl {
+    width: 320px;
+    padding: 40px 15px;
+    margin: 0 auto;
+}
+
+.question-choice-icon {
+    width: 150px;
+    margin-top: 20px;
+}
+
+.multiselect-card {
+    background: #f9f9f9;
+    border: 1px solid transparent;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.multiselect-card:hover,
+.multiselect-card:focus {
+    background: #eeeeee;
+    border: 1px solid #999999;
+}
+
+.page8 ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.page8 ul li {
+    list-style: none;
+    float: left;
+    text-align: center;
+    width: 18%;
+    margin-left: 15px;
+}
+
+.page8 img {
+    width: 100px;
+}
+
+.page9 .question-responses img {
+    width: 250px;
+}
+
+.page10 .question-responses img {
+    width: 200px;
+}
+
+.responseIcon {
+    font-size: 100px;
+    text-align: center;
+}

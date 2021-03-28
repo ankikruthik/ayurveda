@@ -7,16 +7,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SessionHelper } from './core/session.helper';
 import { AdminMaterialModule } from './_helpers/_helpers/material/admin-material/admin-material.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { QuizSurveyRedirectComponent } from './components/common-components/quiz-survey-redirect/quiz-survey-redirect.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuizSurveyRedirectComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AdminMaterialModule
+    AdminMaterialModule,
+    NgbModule
   ],
   providers: [SessionHelper],
   bootstrap: [AppComponent]

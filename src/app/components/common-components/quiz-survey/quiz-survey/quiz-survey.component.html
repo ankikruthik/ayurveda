@@ -1,22 +1,65 @@
-<section class="amain-wrapper w-100">
-    <div class="section-1 position-relative">
+<div>
+    <button mat-stroked-button (click)="Back()">Back</button>
+</div>
 
-        <div class="mid-div">
-            <form [formGroup]="surveyForm">
+<div class="container">
+    <div class="">
+        <div class="col-lg-12">
+            <div class="quiz-container">
+                <form [formGroup]="surveyForm">
+                    <div *ngIf="question.QuestionCategory == 'General'">
+                        <div class="page2 text-center">
+                            <!--Question-->
 
-                <span [innerHTML]="question.QuestionName"></span> <br /> <br />
+                            <h1 class="question-title text-center" [innerHTML]="question.QuestionName"></h1>
+                            <!--Question End-->
+                            <!--Question TextBox-->
+                            <div class="question-responses">
+                                <div class="col-sm-12" *ngIf="question.QuestionType=='TextBox'">
+                                    <div class="inputContainer">
+                                        <input type="text" formControlName="questionControl" class="form-control inputText" />
+                                        <span class="inputSpan" *ngIf="question.QuestionType=='TextBox'">
+                                    <button class="nextbtn" (click)="Next(0)"></button>
+                                </span>
+                                    </div>
+                                </div>
 
-                <span *ngIf="question.QuestionType=='TextBox'"> <input type="text" formControlName="questionControl"
-                        class="form-control" /> </span>
-                <span>
-                    <span *ngFor="let a of question.Options; let index = index">
-                        <span [innerHTML]="a.OptionValue"  (click)="Next(a.OptionId)"> </span> <br />
-                </span>
-                </span>
-                <span *ngIf="question.QuestionType=='TextBox'">
-                    <button mat-stroked-button (click)="Next(0)">Next</button>
-                </span>
-            </form>
+                            </div>
+                            <!--Question TextBox End-->
+                            <!--Question Buttons-->
+
+                            <div class="row">
+                                <div class="col-sm-4" *ngFor="let a of question.Options; let index = index">
+
+                                    <div>
+                                        <button class="btn btn-secondary" [innerHTML]="a.OptionValue" (click)="Next(a.OptionId)">
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!--Question Buttons End-->
+                        </div>
+                    </div>
+
+                    <div *ngIf="question.QuestionCategory != 'General'">
+                        <div>
+                            <div class="page10">
+                                <div class="text-center">
+                                    <h1 class="question-title">Immunity</h1>
+                                    <div class="question-responses">
+                                        <img src="https://cdn3.iconfinder.com/data/icons/summertime-6/512/sun-512.png" alt="" />
+                                        <p>
+                                            Ayurvedic immunity is the belief of strengthening the body’s defenses against diseases. Ayurveda believes in preventing diseases before having to treat them.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-</section>
+</div>

@@ -4,6 +4,75 @@
     font-weight: bold;
 }
 
+.sHeading {
+    text-align: center !important;
+}
+
+.inputText {
+    padding: 50px;
+    border: 2px solid #333;
+    border-radius: 11px;
+    float: left;
+    font-size: 35px;
+}
+
+.nextbtn::before {
+    background-image: url(//cdn.takecareof.com/assets/arrow-submit-d01e8a2717a400fb1538158c8cb68b53f76d754605d66a1ff1aa319c51d4cfbf.svg);
+    opacity: 1;
+    padding-left: .25em;
+    padding-top: .5em;
+    background-position: center;
+    bottom: 0;
+    content: '';
+    height: 45px;
+    margin-top: 1px !important;
+    left: 0;
+    position: absolute;
+    line-height: 45px;
+    clear: both;
+    /* top: 0; */
+    width: 45px;
+    margin-left: -9px;
+}
+
+.divForm {
+    margin-top: 100px;
+}
+
+.nextbtn::after {
+    background-image: url(//cdn.takecareof.com/assets/arrow-submit-success-68f87b262bb55627d58469bc157cc04a5eab118a01309baa20098728a907207c.svg);
+    bottom: -1em;
+    display: inline-block;
+    opacity: 0;
+    /* right: 0; */
+    background-position: center;
+    bottom: 0;
+    content: '';
+    height: 45px;
+    left: 10px;
+    /* clear: both; */
+    position: relative;
+    width: 45px;
+    margin-top: -15px;
+}
+
+.inputSpan {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.nextbtn {
+    background-color: #7f848b;
+    border: 2px solid #7f848b;
+    border-color: #7f848b;
+    border-radius: 50%;
+    color: #bbbfc6;
+    height: 35px;
+    width: 35px;
+    margin-left: -4px;
+}
+
 .section-1 .mid-div button {
     display: inline-block;
     width: 180px;
@@ -30,4 +99,11 @@
 
 .mid-div {
     text-align: center;
+}
+
+.inputContainer {
+    position: relative;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
 }
