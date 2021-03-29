@@ -44,7 +44,7 @@ export class QuizSurveyComponent implements OnInit {
             this.router.navigate(["/ayurveda/quiz-survey-redirect", this.question.NextQuestion]);
 
             }
-          }, 5000);  //5s
+          }, 3000);  //5s
         }
       }
     });
@@ -103,6 +103,7 @@ export class QuizSurveyComponent implements OnInit {
     {
       
     var previousQuestion = _.filter(this.surveyQuestions.Question, q => q.NextQuestion == this.question.QuestionPath)[0];
+    console.log(previousQuestion.QuestionPath);
     this.router.navigate(["/ayurveda/quiz-survey-redirect", previousQuestion.QuestionPath]);
     }
   }

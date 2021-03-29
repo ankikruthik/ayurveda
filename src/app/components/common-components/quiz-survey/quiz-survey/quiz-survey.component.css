@@ -48,8 +48,8 @@
 
 .inputSpan {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 45%;
+    right: 5%;
 }
 
 .nextbtn {
@@ -94,6 +94,20 @@
 .inputContainer {
     position: relative;
     display: block;
-    width: 250px;
+    width: 600px;
     margin: 0 auto;
+}
+
+.response-btns .btn {
+    margin-right: 20px;
+}
+
+.top-nav-back {
+    font-size: 18px;
+}
+
+.brand-navbar .brand-name {
+    font-size: 46px;
+    width: 250px;
+    text-align: center;
 }

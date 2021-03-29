@@ -24,7 +24,7 @@
             "QuestionPath": "MeetYou",
             "QuestionType": "Html",
             "QuestionCategory": "General",
-            "QuestionName": "Nice to meet you ({{userName}})! <br/> <img class='question-choice-icon' src='https://cdn2.iconfinder.com/data/icons/font-awesome/1792/smile-o-512.png' />",
+            "QuestionName": "Nice to meet you ({{userName}})! <br/> <img class='question-choice-icon' src='assets/images/smile.png' />",
             "IsReqyuired": false,
             "BackgroundImageUrl": "",
             "NextQuestion": "Experience"
@@ -50,7 +50,7 @@
                 },
                 {
                     "OptionID": 3,
-                    "OptionValue": "<div> <h2>Skeptical</h2/> <img hight='50' width='50' src='assets/images/disappointed.png' />  <div>Hmmmm, how about we change that?</div> </br></div>"
+                    "OptionValue": "<div> <h2>Skeptical</h2/> <img hight='50' width='50' src='assets/images/disappointed.png' />  <div>Hmmmm, how about we change that?</div> </div>"
 
                 }
             ]

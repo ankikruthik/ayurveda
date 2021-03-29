@@ -2,8 +2,11 @@
 
 @import url("./../node_modules/bootstrap/dist/css/bootstrap.min.css");
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
 body {
-    font: 15px/24px "Poppins", "sans-serif";
+    font: 15px/24px "Lora", "serif";
+    background: #ebf4f3;
 }
 
 html,
@@ -114,9 +117,10 @@ ul li {
     text-align: center;
 }
 
-.title-Position {
+
+/* .title-Position {
     padding-top: 50px;
-}
+} */
 
 .text-black {
     color: #000;
