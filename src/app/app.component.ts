@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SessionHelper } from './core/session.helper';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ayurveda';
+  constructor(private sessionHelper: SessionHelper) {
+    this.sessionHelper.removeItem('clearTimeout');
+    this.sessionHelper.removeItem('Name');
+    
+    this.sessionHelper.removeItem('Age');
+  }
 }

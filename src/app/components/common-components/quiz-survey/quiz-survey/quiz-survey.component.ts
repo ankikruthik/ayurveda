@@ -36,12 +36,11 @@ export class QuizSurveyComponent implements OnInit {
         this.getQuestions();
         this.getNextQuestion(this.nextQuestion);
         this.userName = this.sessionHelper.get(this.question.QuestionPath);
-        if (this.question.QuestionType == "Html") {
+        if (this.question?.QuestionType == "Html") {
           this.sessionHelper.set("clearTimeout", false);
           setTimeout(() => {
             if (this.sessionHelper.get("clearTimeout") == false)            {
-              
-            this.router.navigate(["/ayurveda/quiz-survey-redirect", this.question.NextQuestion]);
+            this.router.navigate(["/ayurveda/quiz-survey-redirect", this.question?.NextQuestion]);
 
             }
           }, 3000);  //5s
@@ -103,11 +102,11 @@ export class QuizSurveyComponent implements OnInit {
     {
       
     var previousQuestion = _.filter(this.surveyQuestions.Question, q => q.NextQuestion == this.question.QuestionPath)[0];
-    console.log(previousQuestion.QuestionPath);
     this.router.navigate(["/ayurveda/quiz-survey-redirect", previousQuestion.QuestionPath]);
     }
   }
   ngOnDestroy() {
+    this.question=null;
     clearTimeout(5000);
     this.sessionHelper.set("clearTimeout", true);
   }
